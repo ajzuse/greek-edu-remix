@@ -4,6 +4,7 @@
 # This remix is not affliated or endorsed by the Fedora Project or RedHat
 
 # yum install spin-kickstarts
+  
 %include /usr/share/spin-kickstarts/fedora-livecd-desktop.ks
 
 part / --size 8192
@@ -94,13 +95,7 @@ maxima
 vxMaxima
 maxima-gui
 chemtool
-kmplot
-kalzium
-kig
-kgeography
 mathomatic
-ktouch
-childsplay
 childsplay-alphabet_sounds_el
 
 
@@ -113,7 +108,6 @@ vlc
 #libdvdcss
 libreoffice
 gimp
-moodle
 
 #Extra DEs
 @sugar-desktop
