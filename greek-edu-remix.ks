@@ -86,6 +86,23 @@ kdeedu-math
 tuxtype2
 stellarium
 tuxmath
+OpenEuclide
+openteacher
+celestia
+writetype
+maxima
+vxMaxima
+maxima-gui
+chemtool
+kmplot
+kalzium
+kig
+kgeography
+mathomatic
+ktouch
+childsplay
+childsplay-alphabet_sounds_el
+
 
 #Other things that are needed
 qmmp
@@ -96,6 +113,7 @@ vlc
 #libdvdcss
 libreoffice
 gimp
+moodle
 
 #Extra DEs
 @sugar-desktop
