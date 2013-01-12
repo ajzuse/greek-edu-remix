@@ -4,16 +4,15 @@
 # This remix is not affliated or endorsed by the Fedora Project or RedHat
 
 # yum install spin-kickstarts
-  
 %include /usr/share/spin-kickstarts/fedora-livecd-desktop.ks
 
 part / --size 8192
 
 # rpmfusion
-repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/16/Everything/i386/os/
-repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/16/i386
-repo --name=rpmfusion-non-free  --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/16/Everything/i386/os
-repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/16/i386
+repo --name=rpmfusion-free --baseurl=http://download1.rpmfusion.org/free/fedora/releases/18/Everything/i386/os/
+repo --name=rpmfusion-free-updates --baseurl=http://download1.rpmfusion.org/free/fedora/updates/18/i386
+repo --name=rpmfusion-non-free  --baseurl=http://download1.rpmfusion.org/nonfree/fedora/releases/18/Everything/i386/os
+repo --name=rpmfusion-non-free-updates --baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/18/i386
 repo --name=adobe --baseurl=http://linuxdownload.adobe.com/linux/i386/
 
 # Adding repo of the Greek Edu Applications
@@ -58,7 +57,7 @@ generic-release-notes
 -yp-tools
 -rpcbind
 
-# greek edu apps
+# Greek edu apps
 gymnasio
 dimotiko
 
@@ -78,7 +77,7 @@ rpmfusion-nonfree-release
 # adobe
 adobe-release
 
-#Edu Applications
+# Edu Applications
 gcompris
 childsplay
 drgeo
@@ -87,19 +86,17 @@ kdeedu-math
 tuxtype2
 stellarium
 tuxmath
-OpenEuclide
+openeuclide
 openteacher
 celestia
 writetype
-maxima
-vxMaxima
-maxima-gui
+wxMaxima
 chemtool
 mathomatic
 childsplay-alphabet_sounds_el
 
 
-#Other things that are needed
+# Other things that are needed
 qmmp
 qmmp-plugins-freeworld
 abiword
@@ -109,11 +106,10 @@ vlc
 libreoffice
 gimp
 
-#Extra DEs
+# Extra DEs
 @sugar-desktop
 
-#%post
-#sed -i -e ‘s/Generic release/Fedora Greek Edu Remix/g’ /etc/fedora-release /etc/issue
-#gconftool-2 --set "/desktop/gnome/peripherals/mouse/touchpad_enabled" --type boolean true
+%post
+sed -i -e ‘s/Generic release/Fedora Greek Edu Remix/g’ /etc/fedora-release /etc/issue
 
 %end
