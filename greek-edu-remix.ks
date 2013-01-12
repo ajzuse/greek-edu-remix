@@ -4,6 +4,7 @@
 # This remix is not affliated or endorsed by the Fedora Project or RedHat
 
 # yum install spin-kickstarts
+  
 %include /usr/share/spin-kickstarts/fedora-livecd-desktop.ks
 
 part / --size 8192
@@ -86,6 +87,17 @@ kdeedu-math
 tuxtype2
 stellarium
 tuxmath
+OpenEuclide
+openteacher
+celestia
+writetype
+maxima
+vxMaxima
+maxima-gui
+chemtool
+mathomatic
+childsplay-alphabet_sounds_el
+
 
 #Other things that are needed
 qmmp
